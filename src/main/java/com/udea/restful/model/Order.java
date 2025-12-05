@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "orders")
-public class order {
+public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,7 +27,7 @@ public class order {
 
     private String notes;
 
-    public order() {}
+    public Order() {}
 
     // Getters & Setters
     public Long getId() { return id; }
